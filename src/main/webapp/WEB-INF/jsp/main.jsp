@@ -23,7 +23,6 @@
         <div class="container"><a class="navbar-brand logo" href="<c:url value="/" />">MyBlog</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="<c:url value="/" />">Anasayfa</a></li>
                         <c:if test="${empty userSession}">
                             <li class="nav-item"><a class="nav-link" href="<c:url value="/register" />">Kayıt Ol</a></li>
                             <li class="nav-item"><a class="nav-link" href="<c:url value="/login/" />">Giriş Yap</a></li>

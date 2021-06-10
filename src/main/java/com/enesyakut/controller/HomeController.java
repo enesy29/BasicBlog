@@ -11,8 +11,7 @@ public class HomeController {
 
     @RequestMapping(value = { "/" , "/home" }, method = RequestMethod.GET)
     public ModelAndView getHome(ModelAndView modelAndView , Model model){
-        model.addAttribute("pageType","/WEB-INF/jsp/home.jsp");
-        modelAndView.setViewName("main");
+        modelAndView.setViewName("redirect:/login");
         return modelAndView;
     }
 }
