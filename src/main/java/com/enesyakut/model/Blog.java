@@ -11,6 +11,7 @@ public class Blog {
     private String title;
     @Column(length = 9999999)
     private String content;
+    @Column(length = 9999999)
     private String description;
 
     private LocalDate create_date;
