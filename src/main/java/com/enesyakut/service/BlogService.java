@@ -3,7 +3,6 @@ package com.enesyakut.service;
 import com.enesyakut.model.Blog;
 import com.enesyakut.model.User;
 import com.enesyakut.repository.BlogRepository;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,6 @@ import java.util.List;
 public class BlogService {
     @Autowired
     private final BlogRepository blogRepository;
-    private SessionFactory sessionFactory;
 
     public BlogService(BlogRepository blogRepository) {
         this.blogRepository = blogRepository;
