@@ -34,7 +34,9 @@ public class BlogService {
     public Blog updatePost(Blog blog , User user) {
         Blog updatePost = blogRepository.save(blog);
         blog.setTitle(updatePost.getTitle());
+        blog.setDescription(updatePost.getDescription());
         blog.setContent(updatePost.getContent());
+        blog.setImageURL(updatePost.getImageURL());
         blog.setCreate_date(LocalDate.now());
         blog.setUser(user);
         blog = blogRepository.save(blog);

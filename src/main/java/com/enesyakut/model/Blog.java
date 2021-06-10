@@ -11,7 +11,10 @@ public class Blog {
     private String title;
     @Column(length = 9999999)
     private String content;
+    private String description;
+
     private LocalDate create_date;
+    private String imageURL;
 
     @ManyToOne
     private User user;
@@ -30,6 +33,22 @@ public class Blog {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getTitle() {

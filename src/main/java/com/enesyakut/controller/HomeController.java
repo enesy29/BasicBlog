@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
     @RequestMapping(value = { "/" , "/home" }, method = RequestMethod.GET)
-    public ModelAndView getHome(ModelAndView modelAndView , Model model){
+    public ModelAndView getHome(ModelAndView modelAndView){
         modelAndView.setViewName("redirect:/login");
         return modelAndView;
     }

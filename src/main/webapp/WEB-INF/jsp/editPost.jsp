@@ -7,7 +7,7 @@
 <div class="container-wrapper">
     <div class="container product-padding">
         <div class="page-header">
-            <h2>Ürün Güncelle</h2>
+            <h2>Gönderiyi Düzenle</h2>
         </div>
 
         <form:form action="${pageContext.request.contextPath}/blog/editPost" method="post"
@@ -20,10 +20,19 @@
             </div>
 
             <div class="form-group">
+                <label for="description">Tanıtım</label>
+                <form:textarea path="description" id="description" class="form-Control" value="${blog.description}"/>
+            </div>
+
+            <div class="form-group">
                 <label for="content">İçerik</label>
                 <form:textarea path="content" id="content" class="form-Control" value="${blog.content}"/>
             </div>
 
+            <div class="form-group">
+                <label for="imageURL">Resim URL</label>
+                <form:input path="imageURL" id="imageURL" class="form-Control"/>
+            </div>
             <br>
 
             <input type="submit" value="Submit" class="btn btn-primary">
