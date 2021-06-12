@@ -30,6 +30,8 @@
                                     <div class="info"><span class="text-muted">${blog.create_date} by&nbsp;<a href="#">${user.username}</a></span></div>
                                     <p>${blog.description}</p>
                                     <a href="<c:url value="/blog/${blog.id}" />" class="btn btn-outline-primary btn-sm">Yazıya Git</a>
+                                    <a href="<c:url value="/blog/editPost/${blog.id}" />" class="btn btn-outline-primary btn-sm">Gönderiyi Düzenle</a>
+                                    <a href="<c:url value="/blog/deletePost/${blog.id}" />" class="btn btn-outline-primary btn-sm">Gönderiyi Sil</a>
                                 </div>
                             </div>
                         </div>
